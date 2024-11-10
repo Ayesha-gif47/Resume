@@ -1,103 +1,229 @@
-    *{
-        margin: 0;
-        padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Main page ki styling  */
+.Main-Container{
+    display: flex;
+}
+/* Personal info section styling start  */
+.Personal-info{
+    height: 100%;
+    width: 25%;
+    background-color: black;
+    color: white;
+}
+#Personal{
+    padding: 1rem;
+}
+#Personal img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: 10%;
+}
+#Personal h1{
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+#Personal p{
+    padding-top: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    color: white;
+}
+#Personal p i{
+    padding-right: 7px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+/* Personal styling end  */
+.line{
+    height: 2px;
+    width: 70%;
+    background-color: white;
+    margin: 5px 40px;
+}
+/* Experience styling start  */
+#Experience{
+    padding: 0.5rem 1rem;
+}
+#Experience h1{
+    font-size: 1.5rem; /* 36px */
+    line-height: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+#Experience p{
+    text-align: justify;
+    width: 90%;
+}
+/* Experience styling end  */
+
+/* Skill Styling start  */
+#Skill{
+    padding: 0.5rem 1rem;
+}
+#Skill h1{
+    font-size: 1.5rem; /* 36px */
+    line-height: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#Skill ol{
+    list-style:decimal;
+    padding-top: 5px;
+    padding-left: 16px;
+    font-size: 18px;
+}
+/* Skill styling end  */
+
+/* Language Styling start  */
+#Language{
+    padding: 0.5rem 1rem;
+}
+#Language h1{
+    font-size: 1.5rem; /* 36px */
+    line-height: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#Language ol{
+    list-style: decimal;
+    padding-left: 16px;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+/* Language styling end  */
+
+/* Personal detailed section start  */
+#Personal-detail{
+    height: 100%;
+    width: 75%;
+    color: white;
+    background-color: blueviolet;
+}
+/* About me styling start  */
+#About{
+    padding: 1rem;
+}
+#About h1{
+    font-size: 1.875rem; 
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+#About .para{
+    padding: 0.5rem;
+    text-align: center;
+}
+#About p{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* About me styling end  */
+.lines{
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin: 5px 100px;
+}
+/* Project styling Start  */
+#Project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Project h1{
+    font-size: 1.875rem; 
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    padding: 0.5rem;
+}
+#Project .Project_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 33.5px;
+}
+#Project .Project_img p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+#Project .Project_img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+#Project .Project_img .verticle_line{
+    border-left: 2px solid white;
+    height: 150px;
+}
+/* Project Styling end  */
+
+/* Expert section styling start  */
+#Expert h1{
+    font-size: 1.875rem; 
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+#Expert .Skills_img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 50px;
+}
+#Expert .Skills_img img{
+    height: 100px;
+    width: 150px;
+}
+/* Expert styling end  */
+
+/* Footer styling start  */
+footer{
+    height: 14rem;
+    background-color: rgb(125, 55, 194);
+    color: white;
+    margin-top: 5.4rem;
+}
+.social_media_icon p{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.social_media_icon p i{
+    padding-right: 12px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+@media only screen and (max-width : 1000px){
+    .Main-Container{
+        flex-direction: column;
     }
-    #Personal img{
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        margin-left: 70px;
+    .Personal-info{
+        width: 100%;
+        padding-left: 30px;
+        background-color: blueviolet;
     }
-    #Personal p{
-        padding-top: 5px;
-        font-size: 19px;
-        cursor: pointer;
+    #Personal-detail{
+        width: 100%;
     }
-    #Personal p i{
-        padding-right: 7px;
-        cursor: pointer;
-    }
-    .line{
-        height: 2px;
-        width: 70%;
-        background-color: white;
-        margin: 5px 40px;
-    }
-    #Experience p{
-        text-align: justify;
-        width: 90%;
-    }
-    #Skill ol{
-        list-style:decimal;
-        padding-left: 16px;
-        font-size: 18px;
-    }
-    #Language ol{
-        list-style: decimal;
-        padding-left: 16px;
-        font-size: 18px;
-        padding-bottom: 50px;
-    }
-    #About p{
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .lines{
-        height: 2px;
-        width: 80%;
-        background-color: white;
-        margin: 5px 100px;
-    }
-    #Project{
-        align-items: center;
-    }
-    #Project .Project_img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        padding: 33.5px;
-    }
-    #Project .Project_img img{
-        height: 100px;
-        width: 100px;
-        border-radius: 20px;
-    }
-    #Project .Project_img .verticle_line{
-        border-left: 2px solid white;
-        height: 150px;
-    }
-    #Expert .Skills_img{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding-top: 50px;
-    }
-    #Expert .Skills_img img{
-        height: 100px;
-        width: 150px;
-    }
-    .social_media_icon p{
-        font-size: 20px;
-        padding-top: 10px;
-        cursor: pointer;
-    }
-    .social_media_icon p i{
-        padding-right: 12px;
-        padding-left: 25px;
-        cursor: pointer;
-    }
-    @media only screen and (max-width : 1000px){
-        #Main-Container{
-            flex-direction: column;
-        }
-        #Personal-info{
-            width: 100%;
-            padding-left: 30px;
-            background-color: blueviolet;
-        }
-        #Personal-detail{
-            width: 100%;
-        }
-    }
+}
