@@ -226,4 +226,8 @@ footer{
     #Personal-detail{
         width: 100%;
     }
+    .lines{
+        width : 80%;
+        align-items: center;
+    }
 }
