@@ -241,12 +241,12 @@ footer{
         align-items: center;
     }
     .Personal-info{
-        width: 100%;
+        width: 100vw;
         justify-content: center;
         align-items: center;
         background-color: blueviolet;
     }
     #Personal-detail{
-        width: 100%;
+        width: 100vw;
     }
 }
